@@ -1,0 +1,113 @@
+
+/*CSS writen by Richard Kaai-Sandmeier*/
+
+/* Global Styles (Mobile First) */
+
+body {
+    display:grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+}
+img{
+    height: 20rem;
+    justify-content: center;
+}
+header, nav, footer{
+  grid-column: 1/3;
+}
+nav ul {
+  display:flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+h1{
+  display:flex;
+  justify-content: space-evenly;
+  background-color: #577399;
+  padding: 2rem;
+  font-size: 4rem;
+}
+nav a{
+  text-decoration:none;
+  background-color: #577399;
+  padding: 1rem 1.5rem;
+  color: black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  list-style: none;
+}
+nav a:hover{
+  background-color: #BDD5EA;
+  color: white;
+}
+h2{
+    font-size: 1rem;
+    font: arial;
+}
+h4{
+    font-weight: normal;
+    font-size: 2rem;
+    background-color: #BDD5EA;
+    padding: 1rem;
+    font: Verdana;
+}
+P{
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 600px){
+    body{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    img{
+        height: 30rem;
+        justify-content: center;
+    }
+    nav a{
+        text-decoration:none;
+        background-color: #577399;
+        padding: 1rem 2rem;
+        color: black;
+        font-size: 1rem;
+        text-transform: uppercase;
+        list-style: none;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 800px){
+    body {
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    img{
+        height: 35rem;
+        justify-content: center;
+    }
+    nav a{
+        text-decoration:none;
+        background-color: #577399;
+        padding: 1rem 2rem;
+        color: black;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 3rem;
+    }
+}
+.block{
+  display:flex;
+  gap:1rem;
+  felx-wrap:wrap;
+  background-color: #FE5F55;
+  padding: 1rem;
+}
+.block > section{
+  flex: 1 1 260px;
+  background-color: #F7F7FF;
+  padding: 0.5rem;
+}
